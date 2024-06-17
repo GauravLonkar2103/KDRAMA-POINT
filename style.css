@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(40, 40, 40);
+    background-size: cover;
+    background-repeat: repeat-y;
+    
+    
+}
+.border{
+    border-left:10px solid white;
+    border-right:10px solid white;
+    box-shadow:5px 5px 50px rgb(95, 10, 126) ;
+}
+.header{
+position:relative;
+top:0px;
+margin: 0px;
+height:550px;
+background-image: url(kimg3.jpg);
+background-repeat: no-repeat;
+background-size: 100vw 550px;
+display:flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 1px 10px white ;
+}
+.moon{
+    position:absolute;
+    top:100px;
+    left:100px;
+    height:60px;
+    width: 60px;
+    background-color: whitesmoke;
+    border:1px solid whitesmoke;
+    border-radius:50%;
+    box-shadow: 1px 1px 20px white ;
+    animation:mon 1s ease-in-out infinite alternate ;
+}
+@keyframes mon {
+    from{
+        box-shadow: 1px 1px 10px white;
+        
+    }
+    to{
+        box-shadow: 3px 3px 20px rgb(255, 255, 255);
+        
+    }
+    
+}
+.header h1{
+    color:aliceblue;
+    font-family: 'Lugrasimo', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    position:absolute;
+    top:140px;
+    letter-spacing: 5px;
+    color: #fff;
+  text-shadow:
+      0 0 3px #000,
+      0 0 7px #000,
+      0 0 21px #000,
+      0 0 42px #000,
+      0 0 10px #000,
+      0 0 81px #000,
+      0 0 92px #000,
+      0 0 102px #000;
+        display:inline;
+        border:1px solid white;
+        box-shadow: 1px 1px 10px white;
+        padding:5px;
+        animation: bor 2s ease-in-out infinite alternate ;
+        
+}
+
+@keyframes bor {
+    from{
+        box-shadow: 1px 1px 10px white;
+        
+    }
+    to{
+        box-shadow: 5px 5px 60px rgb(255, 255, 255);
+        
+    }
+    
+}
+
+@media (max-width:900px) {
+    .header h1{
+        font-size: 30px;
+    }
+    .moon{
+        height:20px;
+        width:20px;
+    }
+}
+@media (max-width:700px) {
+    .header h1{
+        font-size: 25px;
+    }
+   
+}
+
+.navbar-nav a{
+    font-size:1rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px ;
+    font-weight: normal;
+    color:rgba(197, 194, 245, 0.807);
+    border-left: 2px solid rgba(197, 194, 245, 0.807);
+}
+.navbar.navbar-expand-md.navbar-dark.sticky-top{
+    background-color: rgba(109, 10, 126, 0.763);
+    box-shadow:0 5px 35px rgb(95, 10, 126) ;
+}
+.navbar-nav a:hover{
+    color:white;
+    
+}
+.d-flex{
+    margin-left: auto;
+}
+
+.containerr{
+    /* background-color: #000; */
+    margin-left:9rem;
+    margin-right:9rem;
+    display: grid;
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 550px 550px 550px 550px ;
+    /* border-left:2px solid white;
+    border-right:2px solid white; */
+    margin-top:20px;
+    margin-bottom:20px;
+    z-index:-1;
+    justify-content:center;
+    box-shadow:5px 5px 40px rgb(95, 10, 126) ;
+
+}
+.kimg{
+    height:550px;
+    width:20vw;
+    border:5px solid white;
+    z-index:90;
+    transition: all 1s ; 
+    
+}
+.poster{
+    position:relative;
+    color: white;
+    z-index: 60;
+    overflow:hidden;
+    display:flex;
+    /* transition: all 2s ;
+     */
+
+
+
+}
+.txt{
+    font-family: 'Calistoga', cursive;
+    /* display:flex; */
+    justify-content:center;
+    text-align: center;
+    align-items:center;
+   height:550px;
+   width:20vw;
+   /* border:1px solid red;  */
+   position:absolute;
+   top:220px;
+   left:0px; 
+   font-size:2.5rem;
+   color:white;
+   z-index:80;
+   text-shadow:
+      0 0 3px #000,
+      0 0 7px #000,
+      0 0 21px #000,
+      0 0 42px #000,
+      0 0 10px #000,
+      0 0 81px #000,
+      0 0 92px #000,
+      0 0 102px #000;    
+} 
+.txt .subheading{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+/* .poster:hover{
+    border: 3px solid purple;
+   
+    
+} */
+.kimg:hover{
+    
+    filter:blur(4px);
+    transform:translateY(-10px);
+    opacity:0.9;
+    z-index:70;
+    
+    
+}
+
+.txt:hover{
+    z-index:100;
+}
+
+@media (max-width:950px) {
+    .poster{
+        grid-column: 1/5;
+
+    }
+    .kimg{
+        width:55vw;
+    }
+    .txt{
+        width:55vw
+    }
+    
+    
+
+}
+
+
+.btn.btn-outline-secondary{
+    background-color: black;
+}
+
+.footer{
+    height:200px;
+    background-color: rgba(109, 10, 126, 0.763);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .foot{
+    color:grey;
+    position:relative;
+    top:10px;
+    margin:4px;
+    text-decoration: none;
+    font-size:1.2rem;
+}
+
+.com{
+    color:grey;
+    position:relative;
+    top:13px;
+    left:70px;
+    font-size: 1.3rem;
+}
